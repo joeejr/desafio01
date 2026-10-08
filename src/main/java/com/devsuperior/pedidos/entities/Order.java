@@ -1,9 +1,9 @@
 package com.devsuperior.pedidos.entities;
 
 public class Order {
-    private Integer code;
-    private Double basic;
-    private Double discount;
+    final private Integer code;
+    final private Double basic;
+    final private Double discount;
 
     public Order(Integer code, Double basic, Double discount) {
         this.code = code;
@@ -21,9 +21,5 @@ public class Order {
 
     public Double getDiscount() {
         return discount;
-    }
-
-    public void setBasic(Double basic) {
-        this.basic = basic;
     }
 }

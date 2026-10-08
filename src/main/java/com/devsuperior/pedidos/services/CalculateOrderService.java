@@ -10,13 +10,7 @@ public class CalculateOrderService {
     @Autowired
     private OrderService orderService;
 
-    @Autowired
-    private ShippingService shippingService;
-
     public double calculate(Order order) {
-        var totalAfterDiscount = orderService.discount(order);
-        order.setBasic(totalAfterDiscount);
-
-        return shippingService.calculateShipping(order);
+        return orderService.total(order);
     }
 }

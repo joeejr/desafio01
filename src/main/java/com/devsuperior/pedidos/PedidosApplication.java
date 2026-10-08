@@ -13,7 +13,7 @@ public class PedidosApplication implements CommandLineRunner {
 	@Autowired
 	private CalculateOrderService calculateOrderService;
 
-	Order order = new Order(1309, 95.90, 0.0);
+	Order order = new Order(2282, 95.90, 0.0);
 
 	public static void main(String[] args) {
 		SpringApplication.run(PedidosApplication.class, args);
